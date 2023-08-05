@@ -1,0 +1,9 @@
+.app {
+  display: flex;
+  height: 100%;
+  padding: 25px;
+}
+
+.app_topics {
+  width: 25%;
+}

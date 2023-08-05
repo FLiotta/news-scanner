@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fsb"
+version = "0.1.0"
+description = ""
+authors = ["fabrizio.liotta <fabrizio.liotta@ripio.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.30.0"
+beautifulsoup4 = "^4.12.2"
+python-socketio = "^5.8.0"
+aiohttp = "^3.8.4"
+eventlet = "^0.33.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

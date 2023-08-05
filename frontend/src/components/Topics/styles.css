@@ -1,0 +1,70 @@
+.topic {
+  transition: 0.3s all;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.topic__info p:hover {
+  text-decoration: underline;
+}
+
+.topic__info > p {
+  line-height: 0;
+  margin-left: 15px;
+}
+
+.topic__info:hover {
+  background-color: #e3e3e3;
+}
+
+.topics__cta {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topics__cta > button {
+  width: 100%;
+}
+
+.topic__delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+  padding: 15px 11px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.topic__delete > span {
+  line-height: 0;
+  margin-bottom: 1px;
+}
+
+.topic__delete:hover {
+  background-color: rgb(199, 199, 199);
+}
+
+.has-notifications {
+  width: 10px;
+  height: 10px;
+  background-color: #c31919;
+  border-radius: 50%;
+  position: absolute;
+}

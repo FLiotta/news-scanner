@@ -1,0 +1,44 @@
+#news {
+  height: 100%;
+  flex-grow: 1;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.new {
+  cursor: pointer;
+  transition: 0.3s all;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+.new > p {
+  line-height: 0;
+}
+
+.new:hover {
+  background-color: #e3e3e3;
+  box-shadow:
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+  ;
+}
+
+.new-unseen {
+  border: 1px solid red;
+}
+
+.has-notifications {
+  width: 10px;
+  height: 10px;
+  background-color: #c31919;
+  border-radius: 50%;
+}
