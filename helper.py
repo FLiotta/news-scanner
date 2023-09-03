@@ -88,8 +88,9 @@ def scrap_news_v2(query_text: str, time: str = "d"):
             title_container: Tag = container.select("div")[0]
             info_container: Tag = title_container.find_next_sibling("div")
 
-            title = title_container.find("h3")
+            title, newspaper = title_container.findAll(string=True)
             link = container.attrs["href"].split("?q=").pop().split("&")[0]
+
 
             description, hour = info_container.findAll(string=True)
 
@@ -98,7 +99,8 @@ def scrap_news_v2(query_text: str, time: str = "d"):
                 "href": link,
                 "title": title.text,
                 "description": description,
-                "hour": hour
+                "newspaper": newspaper,
+                "hour": hour,
             }
 
             news.append(output)

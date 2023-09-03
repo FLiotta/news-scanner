@@ -11,7 +11,9 @@ AWAIT_TIME = 20
 class New(TypedDict):
     id: str
     title: str
-    thumbnail: str
+    newspaper: str
+    description: str
+    hour: str
     href: str
 
 

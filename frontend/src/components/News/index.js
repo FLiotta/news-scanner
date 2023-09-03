@@ -15,7 +15,7 @@ export const News = () => {
             "new-unseen": !_new.seen
           })}>
             <div>
-              <h3><b>{_new.title}</b></h3>
+              <h3><b>{_new.title}</b> - {_new.newspaper}</h3>
               <p>{_new.description}</p>
               <small>{_new.hour}</small>
             </div>
